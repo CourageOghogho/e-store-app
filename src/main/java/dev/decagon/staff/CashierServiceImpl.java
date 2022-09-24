@@ -19,7 +19,7 @@ public class CashierServiceImpl implements CashierService {
 
         for (Products product:order
              ) {
-            totalAmount+=product.getPrice();
+            totalAmount+=product.getPrice() ;
         }
 
         return "Total Bill is: "+totalAmount;
